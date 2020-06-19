@@ -1,11 +1,5 @@
 
 
-function setup()
-{
-	createCanvas(400,200);
-	background(0);
-}
-
 function draw() {
   var ctx = document.getElementById('canvas').getContext('2d');
   var img = new Image();
