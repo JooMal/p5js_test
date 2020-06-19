@@ -5,4 +5,8 @@ function setup()
 	background(0);
 }
 
-<img name="test1" src="img1.jpg" width="100" height="100">
+var img = new Image();   // Create new img element
+img.addEventListener("load", function() {}, false);
+img.src = 'image1.jpg';
+
+
