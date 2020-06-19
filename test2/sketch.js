@@ -1,12 +1,26 @@
 
+
 function setup()
 {
 	createCanvas(400,200);
 	background(0);
 }
 
-var img = new Image();   // Create new img element
-img.addEventListener("load", function() {}, false);
-img.src = 'img1.jpg';
+function draw() {
+  var ctx = document.getElementById('canvas').getContext('2d');
+  var img = new Image();
+  img.onload = function(){
+    ctx.drawImage(img,0,0);
+    ctx.beginPath();
+    ctx.moveTo(30,96);
+    ctx.lineTo(70,66);
+    ctx.lineTo(103,76);
+    ctx.lineTo(170,15);
+    ctx.stroke();
+  };
+  img.src = 'img1.jpg';
+}
+
+
 
 
