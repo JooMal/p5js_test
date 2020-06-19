@@ -7,6 +7,6 @@ function setup()
 
 var img = new Image();   // Create new img element
 img.addEventListener("load", function() {}, false);
-img.src = 'image1.jpg';
+img.src = 'img1.jpg';
 
 
